@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Online Shopping</title>
+        <link rel="stylesheet" href="style.css"/>
+        <!-- <script src="src/main.js" defer="defer"></script> -->
+        <script src="src/main-filtering.js" defer="defer"></script>
+    </head>
+    <body>
+        <!-- Logo img -->
+        <img src="img/logo.png" alt="Logo" class="logo">
+
+        <section class="buttons">
+            <!-- 버튼을 클릭 했을때 발생하는 이벤트 오브젝트안에 원하는 정보를 갖기 위해 커스텀 프로퍼티를 이용 -->
+            <button class="btn">
+                <img
+                    src="img/blue_t.png"
+                    class="imgBtn"
+                    alt="tshirt"
+                    data-key="type"
+                    data-value="tshirt">
+            </button>
+
+            <button class="btn">
+                <img
+                    src="img/blue_p.png"
+                    class="imgBtn"
+                    alt="pants"
+                    data-key="type"
+                    data-value="pants">
+            </button>
+
+            <button class="btn">
+                <img
+                    src="img/blue_s.png"
+                    class="imgBtn"
+                    alt="skirt"
+                    data-key="type"
+                    data-value="skirt">
+            </button>
+            
+            <button class="btn colorBtn blue" data-key="color" data-value="blue">Blue</button>
+            <button class="btn colorBtn yellow" data-key="color" data-value="yellow">Yellow</button>
+            <button class="btn colorBtn pink" data-key="color" data-value="pink">Pink</button>
+        </section>
+
+        <!-- item -->
+        <ul class="items"></ul>
+    </body>
+</html>
