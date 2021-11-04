@@ -23,6 +23,7 @@
 }
 
 body {
+  min-width: 800px;
   height: 100vh;
   background-color: var(--color-black);
   display: flex;
